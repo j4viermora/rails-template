@@ -24,6 +24,12 @@ gem "devise-i18n"
 # Internationalization
 gem "rails-i18n"
 
+# Background job monitoring
+gem "mission_control-jobs"
+
+# Forms
+gem "simple_form"
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 
