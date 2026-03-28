@@ -54,6 +54,9 @@ gem "money-rails", "~> 3.0"
 # Email delivery
 gem "resend"
 
+# Rich text editor
+gem "lexxy", "~> 0.1.26.beta"
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 
@@ -72,7 +75,7 @@ gem "kamal", require: false
 gem "thruster", require: false
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
-# gem "image_processing", "~> 1.2"
+gem "image_processing", "~> 1.2"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -89,6 +92,8 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
   gem "htmlbeautifier"
+  gem "letter_opener"
+  gem "bullet"
 end
 
 group :test do
