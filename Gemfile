@@ -27,6 +27,9 @@ gem "rails-i18n"
 # Background job monitoring
 gem "mission_control-jobs"
 
+# Multi-tenancy
+gem "acts_as_tenant"
+
 # CSS framework
 gem "tailwindcss-rails"
 
