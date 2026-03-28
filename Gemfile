@@ -27,6 +27,9 @@ gem "rails-i18n"
 # Background job monitoring
 gem "mission_control-jobs"
 
+# CSS framework
+gem "tailwindcss-rails"
+
 # Forms
 gem "simple_form"
 
