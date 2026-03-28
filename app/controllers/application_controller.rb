@@ -8,6 +8,9 @@ class ApplicationController < ActionController::Base
   private
 
   def set_current_tenant
-    set_current_tenant(current_user.company) if current_user
+    return unless current_user
+
+    set_current_tenant(current_user.company)
+    Money.default_currency = Money::Currency.new(current_user.company.currency)
   end
 end
