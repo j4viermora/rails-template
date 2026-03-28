@@ -36,6 +36,15 @@ gem "tailwindcss-rails"
 # Forms
 gem "simple_form"
 
+# File storage
+gem "aws-sdk-s3", require: false
+
+# Pagination
+gem "kaminari"
+
+# Search
+gem "ransack"
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 
